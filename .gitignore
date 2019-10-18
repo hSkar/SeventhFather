@@ -42,7 +42,8 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
-
+*/Assets/StreamingAssets/*.bank
+*/Assets/StreamingAssets/*.bank.meta
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
