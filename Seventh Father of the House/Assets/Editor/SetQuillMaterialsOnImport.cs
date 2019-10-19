@@ -34,6 +34,7 @@ public class SetQuillMaterialsOnImport : AssetPostprocessor
             ModelImporter modelImporter = assetImporter as ModelImporter;
             modelImporter.useFileScale = false;
             modelImporter.importMaterials = false;
+            modelImporter.globalScale = 4;
             
         }
     }
