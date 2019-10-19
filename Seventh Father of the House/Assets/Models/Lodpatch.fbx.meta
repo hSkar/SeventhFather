@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: b8bf714e83cdf554aa5001cf42f102cf
-ModelImporter:
-  serializedVersion: 26
-  internalIDToNameTable: []
-  externalObjects: {}
-=======
-guid: f26cca48bb14f9c48b05aad544790b73
+guid: 363eacd4cc4636d4898be40d05ab1f90
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -14,14 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Patch1_double
+      name: Double Sided Material
     second: {fileID: 2100000, guid: 2d01669585de24c44816c22acf3d50e7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Patch1_single
-    second: {fileID: 2100000, guid: 90b58f12854a46748bd76b78afeb0e82, type: 2}
->>>>>>> bb7d459fcccf5798f8e061424a3bd0f038cf745e
   materials:
     importMaterials: 1
     materialName: 0
@@ -76,11 +63,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-<<<<<<< HEAD
     useFileScale: 1
-=======
-    useFileScale: 0
->>>>>>> bb7d459fcccf5798f8e061424a3bd0f038cf745e
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

@@ -1,4 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 3b5d84ccd7b3fc245b7057e8497f637e
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable: []
+  externalObjects: {}
+=======
 guid: 1495741d417666946a830597dd21fac3
 ModelImporter:
   serializedVersion: 26
@@ -14,6 +21,7 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Patch2_single
     second: {fileID: 2100000, guid: 90b58f12854a46748bd76b78afeb0e82, type: 2}
+>>>>>>> bb7d459fcccf5798f8e061424a3bd0f038cf745e
   materials:
     importMaterials: 1
     materialName: 0
@@ -68,7 +76,11 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+<<<<<<< HEAD
+    useFileScale: 1
+=======
     useFileScale: 0
+>>>>>>> bb7d459fcccf5798f8e061424a3bd0f038cf745e
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
