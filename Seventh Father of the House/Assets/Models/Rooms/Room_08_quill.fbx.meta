@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 71c57106fc55b184a98df86ab60ed159
+guid: b91f3e6ddcb2a0346befeea004fc98e9
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -7,23 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: NewLayer7_double
+      name: Det_double
     second: {fileID: 2100000, guid: 2d01669585de24c44816c22acf3d50e7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: NewLayer7_single
+      name: Det_single
     second: {fileID: 2100000, guid: 90b58f12854a46748bd76b78afeb0e82, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: NewLayer8_double
-    second: {fileID: 2100000, guid: 2d01669585de24c44816c22acf3d50e7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: NewLayer8_single
-    second: {fileID: 2100000, guid: 90b58f12854a46748bd76b78afeb0e82, type: 2}
+      name: No Name
+    second: {fileID: 2100000, guid: 8ff1ec1e4aa125b4a8ffeb8ad76edf4f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -54,7 +49,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 4
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -101,7 +96,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 4
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -15,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - InteractablePhysics
+  - Player
   - 
   - 
   - 
