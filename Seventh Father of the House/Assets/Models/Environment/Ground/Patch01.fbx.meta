@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3b5d84ccd7b3fc245b7057e8497f637e
+guid: 3f99490a28aa4b3478e24d300e22c968
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Patch2_double
+      name: Patch001_double
     second: {fileID: 2100000, guid: 2d01669585de24c44816c22acf3d50e7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Patch2_single
-    second: {fileID: 2100000, guid: 90b58f12854a46748bd76b78afeb0e82, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -97,7 +92,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
