@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 712aa1170650cf24ea3869e270ad6315
-=======
-guid: 417c5fbaaa80f874d884c7b9c8c0a356
->>>>>>> bb7d459fcccf5798f8e061424a3bd0f038cf745e
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -72,7 +68,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -101,7 +97,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
