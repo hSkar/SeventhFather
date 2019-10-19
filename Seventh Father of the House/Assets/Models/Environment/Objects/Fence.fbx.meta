@@ -7,7 +7,17 @@ guid: a98dc2c305aa90b42a620c69d2239eef
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fence_double
+    second: {fileID: 2100000, guid: 2d01669585de24c44816c22acf3d50e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fence_single
+    second: {fileID: 2100000, guid: 90b58f12854a46748bd76b78afeb0e82, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,7 +72,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
