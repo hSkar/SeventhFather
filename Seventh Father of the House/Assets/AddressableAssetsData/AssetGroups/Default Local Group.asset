@@ -15,44 +15,51 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_Data:
     m_SerializedData: []
-  m_GUID: bfa566e14a06a844aae61cdbb7d6c982
+  m_GUID: c024c3b5a59650f49ae223fd86db77ae
   m_SerializeEntries:
   - m_GUID: 1859178122c8f1145880590760ae2883
-    m_Address: Scene_6
+    m_Address: Scene_Father6
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - scene
   - m_GUID: 25ba8a1185e187846ad2beb73f5ff7e1
-    m_Address: Scene_2
+    m_Address: Scene_Father2
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - scene
   - m_GUID: 50981e465ee621d40bb893ac9b1144f6
-    m_Address: Scene_1
+    m_Address: Scene_Forest
     m_ReadOnly: 0
     m_SerializedLabels:
     - scene
   - m_GUID: 59d6e1aceb1314f4d811946514550e44
-    m_Address: Scene_4
+    m_Address: Scene_Father4
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - scene
   - m_GUID: 873450b28c11bd946a4994acbd5d56a4
-    m_Address: Scene_7
+    m_Address: Scene_Father7
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - scene
   - m_GUID: 9ca469bfa0342f443ae89becf6d39f84
-    m_Address: Scene_5
+    m_Address: Scene_Father5
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - scene
   - m_GUID: ee445e2d9038cba45868ae6e5d724bba
-    m_Address: Scene_3
+    m_Address: Scene_Father3
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - scene
   - m_GUID: fcce838821985fd48837b0bfec365452
-    m_Address: Hallway
+    m_Address: Scene_Hallway
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - scene
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a334493150fd26a40bc6e4b69912b43c, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: d265708db434a744e8ed62de8997794f, type: 2}
-    - {fileID: 11400000, guid: c800de3629de8404b9645b455ed0577c, type: 2}
+    - {fileID: 11400000, guid: 36c45192b52396747afadd6cc2da3e4b, type: 2}
+    - {fileID: 11400000, guid: 0d42f72c0bd044e42bb810cb5ed3512d, type: 2}
