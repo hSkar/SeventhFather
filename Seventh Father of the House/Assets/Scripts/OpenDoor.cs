@@ -10,6 +10,7 @@ public class OpenDoor : MonoBehaviour
     public SteamVR_Action_Boolean booleanAction;
     public SteamVR_Input_Sources inputSource;
     public Rigidbody _doorHinge;
+    public Transform _pivot;
 
     private Vector3 force;
     private Vector3 cross;
@@ -80,7 +81,9 @@ public class OpenDoor : MonoBehaviour
  
      private void OnHandHoverEnd()
      {
+
          // Set angular velocity to zero if the hand stops hovering
-         _doorHinge.angularVelocity = Vector3.zero;
+         if(!_isGrabbing)
+            _doorHinge.angularVelocity = Vector3.zero;
      }
  }
