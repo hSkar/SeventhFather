@@ -173,6 +173,9 @@ namespace FMODUnity
                 }
             }
 
+            var eventProp = serializedObject.FindProperty("onAudioFinished");
+            EditorGUILayout.PropertyField(eventProp);
+
             serializedObject.ApplyModifiedProperties();
         }
 

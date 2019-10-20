@@ -19,6 +19,11 @@ public class SceneTrigger : InteractionTrigger
         }
     }
 
+    public void ManualLoad()
+    {
+        TriggerEnter(null);
+    }
+
     private void OnSceneLoaded(AsyncOperationHandle<SceneInstance> sceneHandle)
     {
         //sceneHandle.Result.Activate();

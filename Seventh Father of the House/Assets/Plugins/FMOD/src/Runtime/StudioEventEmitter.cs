@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using UnityEngine.Events;
 
 namespace FMODUnity
 {
@@ -20,13 +21,16 @@ namespace FMODUnity
 
         protected FMOD.Studio.EventDescription eventDescription;
         public  FMOD.Studio.EventDescription EventDescription { get { return eventDescription; } }
-
+        
         protected FMOD.Studio.EventInstance instance;
         public  FMOD.Studio.EventInstance EventInstance { get { return instance; } }
 
+        public UnityEvent onAudioFinished;
         private bool hasTriggered = false;
         private bool isQuitting = false;
         private bool isOneshot = false;
+
+        private bool hasStopped;
 
         private const string SnapshotString = "snapshot";
 
@@ -70,6 +74,7 @@ namespace FMODUnity
                     {
                         instance.release();
                         instance.clearHandle();
+                        
                     }
                 }
 
@@ -105,6 +110,23 @@ namespace FMODUnity
                     Params[i].ID = param.id;
                 }
             }
+        }
+
+        private void Update()
+        {
+            if (hasTriggered && !isQuitting && !hasStopped)
+            {
+                FMOD.Studio.PLAYBACK_STATE playbackState;
+                var result = instance.getPlaybackState(out playbackState);
+                if(result == FMOD.RESULT.OK)
+                {
+                    if(playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+                    {
+                        hasStopped = true;
+                        onAudioFinished?.Invoke();
+                    }
+                }
+            }    
         }
 
         public void Play()

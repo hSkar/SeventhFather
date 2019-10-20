@@ -43,6 +43,6 @@ public class PlayerMovement : MonoBehaviour
     }
     private void updateInput()
     {
-        trackpad = SteamVR_Actions._default.MovementAxis.GetAxis(Hand);
+        //trackpad = SteamVR_Actions._default.MovementAxis.GetAxis(Hand);
     }
 }
