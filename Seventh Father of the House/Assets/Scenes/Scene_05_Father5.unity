@@ -316,5 +316,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 7.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
+      propertyPath: Event
+      value: event:/Far5wav
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc60c22ee86deac4f95d18477ae8d0a1, type: 3}

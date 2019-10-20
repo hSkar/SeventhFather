@@ -280,6 +280,16 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5160929088310615217, guid: 1c0e13f1b27622a48924ef74e7c0f8ac,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 7.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5160929088310615217, guid: 1c0e13f1b27622a48924ef74e7c0f8ac,
+        type: 3}
+      propertyPath: Event
+      value: event:/Far7b
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c0e13f1b27622a48924ef74e7c0f8ac, type: 3}
 --- !u!4 &7685420830871108146 stripped
