@@ -1,17 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.ResourceManagement.ResourceProviders;
 
 public class SceneTrigger : InteractionTrigger
 {
+    [SerializeField]
+    private AssetReference _sceneReference;
+
+    private bool _sceneLoaded;
+    private AsyncOperationHandle<SceneInstance> _sceneHandle;    
 
     protected override void TriggerEnter(Collider coll)
     {
-        
+        if (!_sceneLoaded)
+        {
+            _sceneReference.LoadSceneAsync().Completed += OnSceneLoaded;
+        }
     }
 
-    protected override void TriggerExit(Collider coll)
+    private void OnSceneLoaded(AsyncOperationHandle<SceneInstance> sceneHandle)
     {
+        _sceneHandle = sceneHandle;
         
     }
 }

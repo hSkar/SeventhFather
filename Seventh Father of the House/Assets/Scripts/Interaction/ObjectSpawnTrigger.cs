@@ -5,14 +5,13 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-public class SpawnTrigger : InteractionTrigger
+public class ObjectSpawnTrigger : InteractionTrigger
 {
     [SerializeField]
     private AssetReference _assetReference;
 
-    private GameObject _object;
     private bool _assetLoaded;
-
+    private GameObject _object;
     private void Awake()
     {
         _assetReference.LoadAssetAsync<GameObject>().Completed += OnAssetLoaded;    
@@ -26,11 +25,19 @@ public class SpawnTrigger : InteractionTrigger
 
     protected override void TriggerEnter(Collider coll)
     {
-        
+        if (!_assetLoaded)
+        {
+            return;
+        }
+
     }
 
     protected override void TriggerExit(Collider coll)
     {
-        
+        if (!_assetLoaded)
+        {
+            return;
+        }
+            
     }
 }
