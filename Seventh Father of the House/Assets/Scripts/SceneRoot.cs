@@ -15,8 +15,10 @@ public class SceneRoot : MonoBehaviour
     [SerializeField]
     private Transform _roomTransform;
 
-    public UnityEngine.ResourceManagement.ResourceProviders.SceneInstance sceneInstance;
+    private UnityEngine.ResourceManagement.ResourceProviders.SceneInstance _sceneInstance;
+    public UnityEngine.ResourceManagement.ResourceProviders.SceneInstance SceneInstance { get { return _sceneInstance; }set { _sceneInstance = value; _sceneInstanceSet = true; } }
 
+    private bool _sceneInstanceSet = false;
     [SerializeField]
     private bool _translateOnEnable = true;
 
@@ -30,15 +32,22 @@ public class SceneRoot : MonoBehaviour
             _roomTransform.Rotate(0, _yRotation, 0);
         }
 
-        GameManager.Instance.RoomLoadedCallback += OnRoomLoaded;
+        GameManager.Instance.RoomLoadedCallback += OnNewRoomLoaded;
     }
 
-    private void OnRoomLoaded(AssetReference obj)
+    private void OnNewRoomLoaded(AssetReference obj)
     {
+        if (!_sceneInstanceSet)
+        {
+            UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(this.gameObject.scene);
+            return;
+        }
+            
+
         if (obj.RuntimeKey.Equals(_unloadReference.RuntimeKey))
         {
-            if(sceneInstance.Scene != null)
-                Addressables.UnloadSceneAsync(sceneInstance);
+            if(SceneInstance.Scene != null)
+                Addressables.UnloadSceneAsync(SceneInstance);
         }
     }
 }

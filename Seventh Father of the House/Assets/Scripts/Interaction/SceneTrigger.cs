@@ -24,7 +24,7 @@ public class SceneTrigger : InteractionTrigger
         //sceneHandle.Result.Activate();
         _sceneLoaded = true;
 
-        sceneHandle.Result.Scene.GetRootGameObjects()[0].GetComponent<SceneRoot>().sceneInstance = sceneHandle.Result;
+        sceneHandle.Result.Scene.GetRootGameObjects()[0].GetComponent<SceneRoot>().SceneInstance = sceneHandle.Result;
 
         GameManager.Instance.OnLoadedRoom(_sceneToLoad);
     }

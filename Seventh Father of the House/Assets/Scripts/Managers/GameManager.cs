@@ -38,6 +38,8 @@ public class GameManager : MonoBehaviour
 
     public Action<AssetReference> RoomLoadedCallback;
 
+    private Transform PlayerCamera;
+
     public void OnLoadedRoom(AssetReference sceneRef)
     {
         LastLoadedRoom = sceneRef;
