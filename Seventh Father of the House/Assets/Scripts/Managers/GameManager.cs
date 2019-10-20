@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
         {
             if(_instance == null)
             {
-                var go = new GameObject("GameManager[SINGLETON");
+                var go = new GameObject("GameManager[SINGLETON]");
                 _instance = go.AddComponent<GameManager>();
             }
 

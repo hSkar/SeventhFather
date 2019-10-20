@@ -22,7 +22,12 @@ public class ObjectUnloader : MonoBehaviour
 
         if (obj.RuntimeKey.Equals(_unloadReference.RuntimeKey))
         {
-            Destroy(this.gameObject);
+            DestroyObject();
         }
+    }
+
+    public void DestroyObject()
+    {
+        Destroy(this.gameObject);
     }
 }
