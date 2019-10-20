@@ -1,5 +1,43 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3357750169681197564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Seventh Father/Seventh Father/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637071247620000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 688
+  Exists: 1
+--- !u!114 &-2730010420565209472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Seventh Father/Seventh Father/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637071247620000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-229528413202593950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,7 +55,7 @@ MonoBehaviour:
   lastModified: 637070378444434710
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31,16 +69,78 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 4866307765552535047}
-  - {fileID: -229528413202593950}
-  EditorEvents: []
+  - {fileID: 7028277181067559169}
+  - {fileID: 7505115638491622719}
+  EditorEvents:
+  - {fileID: 3558546326546347749}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -229528413202593950}
+  - {fileID: 7505115638491622719}
   StringsBanks:
-  - {fileID: 4866307765552535047}
-  stringsBankWriteTime: 637070378444484475
+  - {fileID: 7028277181067559169}
+  stringsBankWriteTime: 637071835960000000
   cacheVersion: 3
+--- !u!114 &2705784317775256534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Seventh Father/Seventh Father/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637071247620000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 688
+  Exists: 1
+--- !u!114 &3558546326546347749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vindbjelle_starten
+  m_EditorClassIdentifier: 
+  Path: event:/Vindbjelle_starten
+  guid: 63caff4a5d6ac54988068b6d9fb244e9
+  Banks:
+  - {fileID: 7505115638491622719}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19000
+--- !u!114 &4572584616855992219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Seventh Father/Seventh Father/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637071247620000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4866307765552535047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,4 +160,60 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 688
+  Exists: 0
+--- !u!114 &7028277181067559169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Seventh Father/Seventh Father/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637071835960000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 744
   Exists: 1
+--- !u!114 &7505115638491622719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Seventh Father/Seventh Father/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637071835960000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &7890139057801510608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Seventh Father/Seventh Father/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637071247620000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
