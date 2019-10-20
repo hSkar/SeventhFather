@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/Far2
   guid: ae2add887b52a146a9ce9b1d9616ba7f
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
   Path: event:/Far4
   guid: 6ba9ec633514f5458d40a6d3e280c6e5
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -61,7 +61,7 @@ MonoBehaviour:
   Path: event:/Far7b
   guid: f36ba9cb453f354083e10a6aca8010cd
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -84,7 +84,7 @@ MonoBehaviour:
   Path: event:/sink
   guid: 233cfad933d5814f93d252a719a9b7fd
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -107,7 +107,7 @@ MonoBehaviour:
   Path: event:/Far6
   guid: a24ece05b868d540951737d73594733f
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -115,6 +115,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 5.6
   Length: 22400
+--- !u!114 &-3682680791398268005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/skummel_vind_atmos
+  m_EditorClassIdentifier: 
+  Path: event:/skummel_vind_atmos
+  guid: c2035ecf270afc4c910e217c8966252c
+  Banks:
+  - {fileID: 7226799773718789090}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 65984
 --- !u!114 &-3357750169681197564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +191,7 @@ MonoBehaviour:
   Path: event:/Far1_stoyfjernet
   guid: 58bb85de3cb8f749b828f1df552be214
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -208,7 +231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 2805401880285640703}
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   EditorEvents:
   - {fileID: 3558546326546347749}
   - {fileID: -818463233534262485}
@@ -222,12 +245,16 @@ MonoBehaviour:
   - {fileID: 3760492339060762650}
   - {fileID: -5760215492075352618}
   - {fileID: 494104070133178440}
+  - {fileID: 5591285514968168813}
+  - {fileID: 6917557474610178965}
+  - {fileID: -3682680791398268005}
+  - {fileID: 9074251179978067214}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   StringsBanks:
   - {fileID: 2805401880285640703}
-  stringsBankWriteTime: 637071956510000000
+  stringsBankWriteTime: 637072092820000000
   cacheVersion: 3
 --- !u!114 &494104070133178440
 MonoBehaviour:
@@ -244,7 +271,7 @@ MonoBehaviour:
   Path: event:/klokke
   guid: fcd19cadff509f4e89993d954bc20305
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -306,11 +333,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/Master.strings.bank
   SubDir: 
-  lastModified: 637071956510000000
+  lastModified: 637072092820000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1154
+    Value: 1358
   Exists: 1
 --- !u!114 &3558546326546347749
 MonoBehaviour:
@@ -327,7 +354,7 @@ MonoBehaviour:
   Path: event:/Vindbjelle_starten
   guid: 63caff4a5d6ac54988068b6d9fb244e9
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -350,7 +377,7 @@ MonoBehaviour:
   Path: event:/peis
   guid: e623e6aeece0f44f8b65be13fb95967a
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -391,13 +418,13 @@ MonoBehaviour:
   Path: event:/lampe
   guid: 2b13aec3f2aa26429834e29abecdd41c
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 2.8
   Length: 36000
 --- !u!114 &4668786230367049843
 MonoBehaviour:
@@ -439,6 +466,52 @@ MonoBehaviour:
   - Name: Desktop
     Value: 688
   Exists: 0
+--- !u!114 &5591285514968168813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/skummel_vind_utenfor
+  m_EditorClassIdentifier: 
+  Path: event:/skummel_vind_utenfor
+  guid: 6b6d4ab8142cc94693ea929912aaa8ac
+  Banks:
+  - {fileID: 7226799773718789090}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 66000
+--- !u!114 &6917557474610178965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vindbjelle_inne
+  m_EditorClassIdentifier: 
+  Path: event:/Vindbjelle_inne
+  guid: 878251a89ff01d4c8eceb6753575e107
+  Banks:
+  - {fileID: 7226799773718789090}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 72000
 --- !u!114 &7025211879319547136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +552,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 744
   Exists: 1
+--- !u!114 &7226799773718789090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Master.bank
+  SubDir: 
+  lastModified: 637072092820000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 9759456
+  Exists: 1
 --- !u!114 &7505115638491622719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,7 +605,7 @@ MonoBehaviour:
   Path: event:/Far3
   guid: 37ae641eee66fe40b9cce41e2581d950
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -553,7 +646,7 @@ MonoBehaviour:
   Path: event:/Far5wav
   guid: 9044ed6f9ca1d44c9d2167317ab4a871
   Banks:
-  - {fileID: 8859251238664771310}
+  - {fileID: 7226799773718789090}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -581,3 +674,26 @@ MonoBehaviour:
   - Name: 
     Value: 6215520
   Exists: 1
+--- !u!114 &9074251179978067214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vindbjelle_inne_klang
+  m_EditorClassIdentifier: 
+  Path: event:/Vindbjelle_inne_klang
+  guid: d5fea2a252e4cf448d63798dda8167eb
+  Banks:
+  - {fileID: 7226799773718789090}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 72000
