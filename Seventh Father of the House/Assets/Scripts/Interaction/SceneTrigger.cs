@@ -7,22 +7,25 @@ using UnityEngine.ResourceManagement.ResourceProviders;
 public class SceneTrigger : InteractionTrigger
 {
     [SerializeField]
-    private AssetReference _sceneReference;
+    private AssetReference _sceneToLoad;
 
-    private bool _sceneLoaded;
-    private AsyncOperationHandle<SceneInstance> _sceneHandle;    
+    private bool _sceneLoaded;    
 
     protected override void TriggerEnter(Collider coll)
     {
         if (!_sceneLoaded)
         {
-            _sceneReference.LoadSceneAsync().Completed += OnSceneLoaded;
+            Addressables.LoadSceneAsync(_sceneToLoad, UnityEngine.SceneManagement.LoadSceneMode.Additive, true).Completed += OnSceneLoaded;
         }
     }
 
     private void OnSceneLoaded(AsyncOperationHandle<SceneInstance> sceneHandle)
     {
-        _sceneHandle = sceneHandle;
-        
+        sceneHandle.Result.Activate();
+        _sceneLoaded = true;
+
+        sceneHandle.Result.Scene.GetRootGameObjects()[0].GetComponent<SceneRoot>().sceneInstance = sceneHandle.Result;
+
+        GameManager.Instance.OnLoadedRoom(_sceneToLoad);
     }
 }
