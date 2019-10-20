@@ -7,19 +7,92 @@
 [WRN] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7f9948ca0e08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7f9949fd9608 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] SoundI::release                          : skummel_vind_utenfor (0x7f993151d588)
-[LOG] SoundI::release                          :     skummel_vind_utenfor (0x7f994ab59878)
-[LOG] SoundI::release                          :     skummel_vind_utenfor (0x7f99370ec888)
-[LOG] SoundI::release                          : skummel_vind_atmos (0x7f994f2a3bd8)
-[LOG] SoundI::release                          :     skummel_vind_atmos (0x7f99372cafa8)
-[LOG] SoundI::release                          :     skummel_vind_atmos (0x7f9937e4b398)
+[LOG] SystemI::createSound                     : filename = ../FMOD/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7f993db60708 : node = 0x7f993dbbaca0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7f993cea4048.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f993db60708
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9737600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 22112
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f993dbbadb0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Vindbjelle_starten', format=2, channels=2, frequency=48000, lengthbytes=357632, lengthpcm=1240121, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.368896.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f993db60708
+[LOG] SoundI::release                          : Vindbjelle_starten (0x7f994abed798)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f993dd5ffb8)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f993dd60148)
+[LOG] SoundI::getSubSound                      : sound 0x7f993db60708.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = ../FMOD/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7f993de7a428 : node = 0x7f993de6b180
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7f993cea4048.  list count = 0
+[LOG] SystemI::createSound                     : filename = ../FMOD/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f993de7a428
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7f993ddc2a68 : node = 0x7f993ddb6660
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7f993cea4048.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9737600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 22112
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f993de6b290
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Vindbjelle_starten', format=2, channels=2, frequency=48000, lengthbytes=357632, lengthpcm=1240121, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.368896.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f993de7a428
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f993ddc2a68
+[LOG] SystemI::createSoundInternal             :     Create name='../FMOD/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9737600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 22112
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f993ddb6770
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Vindbjelle_starten', format=2, channels=2, frequency=48000, lengthbytes=357632, lengthpcm=1240121, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.368896.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f993ddc2a68
+[LOG] SoundI::release                          : Vindbjelle_starten (0x7f993dbb3878)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f993dd5ec28)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f993dd5edb8)
+[LOG] SoundI::getSubSound                      : sound 0x7f993de7a428.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 0x7f993ddc2a68.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Vindbjelle_starten (0x7f993cea0478)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f993dd5f6c8)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f993dd5f858)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f993dd60b08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f993dd60b08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f993dd60b08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f993dd60b08
+[LOG] SoundI::release                          : skummel_vind_utenfor (0x7f994abd7258)
+[LOG] SoundI::release                          :     skummel_vind_utenfor (0x7f993dd608a8)
+[LOG] SoundI::release                          :     skummel_vind_utenfor (0x7f993dd60b08)
+[LOG] SoundI::release                          : skummel_vind_atmos (0x7f994da767f8)
+[LOG] SoundI::release                          :     skummel_vind_atmos (0x7f9937190d38)
+[LOG] SoundI::release                          :     skummel_vind_atmos (0x7f993c9edb48)
+[LOG] SoundI::release                          : Vindbjelle_starten (0x7f993db60708)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f993de6cd58)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f993de6a778)
+[LOG] SoundI::release                          : Vindbjelle_starten (0x7f993de7a428)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f993de6b418)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f993de07528)
+[LOG] SoundI::release                          : Vindbjelle_starten (0x7f993ddc2a68)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f9939a89ee8)
+[LOG] SoundI::release                          :     Vindbjelle_starten (0x7f9939a8a078)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
