@@ -21,7 +21,7 @@ public class SceneTrigger : InteractionTrigger
 
     private void OnSceneLoaded(AsyncOperationHandle<SceneInstance> sceneHandle)
     {
-        sceneHandle.Result.Activate();
+        //sceneHandle.Result.Activate();
         _sceneLoaded = true;
 
         sceneHandle.Result.Scene.GetRootGameObjects()[0].GetComponent<SceneRoot>().sceneInstance = sceneHandle.Result;
