@@ -17,11 +17,39 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: bfa566e14a06a844aae61cdbb7d6c982
   m_SerializeEntries:
+  - m_GUID: 1859178122c8f1145880590760ae2883
+    m_Address: Scene_6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 25ba8a1185e187846ad2beb73f5ff7e1
+    m_Address: Scene_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   - m_GUID: 50981e465ee621d40bb893ac9b1144f6
-    m_Address: Scene_01_Forest
+    m_Address: Scene_1
     m_ReadOnly: 0
     m_SerializedLabels:
     - scene
+  - m_GUID: 59d6e1aceb1314f4d811946514550e44
+    m_Address: Scene_4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 873450b28c11bd946a4994acbd5d56a4
+    m_Address: Scene_7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9ca469bfa0342f443ae89becf6d39f84
+    m_Address: Scene_5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ee445e2d9038cba45868ae6e5d724bba
+    m_Address: Scene_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fcce838821985fd48837b0bfec365452
+    m_Address: Hallway
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a334493150fd26a40bc6e4b69912b43c, type: 2}
   m_SchemaSet:
