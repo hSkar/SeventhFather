@@ -38,6 +38,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-818463233534262485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Far1_stoyfjernet
+  m_EditorClassIdentifier: 
+  Path: event:/Far1_stoyfjernet
+  guid: 58bb85de3cb8f749b828f1df552be214
+  Banks:
+  - {fileID: 4668786230367049843}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 8.8
+  Length: 34455
 --- !u!114 &-229528413202593950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,17 +92,38 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 7028277181067559169}
-  - {fileID: 7505115638491622719}
+  - {fileID: 2805401880285640703}
+  - {fileID: 4668786230367049843}
   EditorEvents:
   - {fileID: 3558546326546347749}
+  - {fileID: -818463233534262485}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 7505115638491622719}
+  - {fileID: 4668786230367049843}
   StringsBanks:
-  - {fileID: 7028277181067559169}
-  stringsBankWriteTime: 637071835960000000
+  - {fileID: 2805401880285640703}
+  stringsBankWriteTime: 637071878440000000
   cacheVersion: 3
+--- !u!114 &699728112670412209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Master.bank
+  SubDir: 
+  lastModified: 637071850070000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 360608
+  Exists: 0
 --- !u!114 &2705784317775256534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +144,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 688
   Exists: 1
+--- !u!114 &2805401880285640703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Master.strings.bank
+  SubDir: 
+  lastModified: 637071878440000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 802
+  Exists: 1
 --- !u!114 &3558546326546347749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +179,7 @@ MonoBehaviour:
   Path: event:/Vindbjelle_starten
   guid: 63caff4a5d6ac54988068b6d9fb244e9
   Banks:
-  - {fileID: 7505115638491622719}
+  - {fileID: 4668786230367049843}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -141,6 +205,26 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &4668786230367049843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Master.bank
+  SubDir: 
+  lastModified: 637071878440000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 707008
+  Exists: 1
 --- !u!114 &4866307765552535047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +244,26 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 688
+  Exists: 0
+--- !u!114 &7025211879319547136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Master.bank
+  SubDir: 
+  lastModified: 637071858750000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 360512
   Exists: 0
 --- !u!114 &7028277181067559169
 MonoBehaviour:
