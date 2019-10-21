@@ -313,36 +313,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Script: {fileID: 0}
   m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 2805401880285640703}
-  - {fileID: 3438923689029223460}
-  EditorEvents:
-  - {fileID: 3558546326546347749}
-  - {fileID: -818463233534262485}
-  - {fileID: -4135802938532393361}
-  - {fileID: 4615686876278400179}
-  - {fileID: 7599412468184080551}
-  - {fileID: -6849138540005971877}
-  - {fileID: 8075625585755109170}
-  - {fileID: -4094612581343898568}
-  - {fileID: -8072554839204325356}
-  - {fileID: 3760492339060762650}
-  - {fileID: -5760215492075352618}
-  - {fileID: 494104070133178440}
-  - {fileID: 5591285514968168813}
-  - {fileID: 6917557474610178965}
-  - {fileID: -3682680791398268005}
-  - {fileID: 9074251179978067214}
-  - {fileID: 4148698251898972481}
+  m_EditorClassIdentifier: Assembly-CSharp-Editor-firstpass:FMODUnity:EventCache
+  EditorBanks: []
+  EditorEvents: []
   EditorParameters: []
-  MasterBanks:
-  - {fileID: 3438923689029223460}
-  StringsBanks:
-  - {fileID: 2805401880285640703}
-  stringsBankWriteTime: 637072557483263969
+  MasterBanks: []
+  StringsBanks: []
+  stringsBankWriteTime: 0
   cacheVersion: 3
 --- !u!114 &494104070133178440
 MonoBehaviour:
