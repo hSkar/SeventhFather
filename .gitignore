@@ -44,6 +44,7 @@ ExportedObj/
 *.VC.db
 */Assets/StreamingAssets/*.bank
 */Assets/StreamingAssets/*.bank.meta
+*fmod_editor.log
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
