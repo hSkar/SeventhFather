@@ -13,6 +13,12 @@ public class InteractionTrigger : MonoBehaviour
     private bool _hasEntered = false;
     private bool _hasExited = false;
 
+    [ContextMenu("Trigger")]
+    public void TestTrigger()
+    {
+        OnEnter?.Invoke();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (playOnce && _hasEntered)

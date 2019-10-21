@@ -27,7 +27,7 @@ public class QuillAnimSystem : SingletonObject<QuillAnimSystem> {
 
 	void Update () {
 		for(int i = 0; i < _frameRates.Count; ++i) {
-			_frameRateCounters[i] += Time.deltaTime * 590;
+			_frameRateCounters[i] += Time.deltaTime * 580;
 			if(_frameRateCounters[i] >= 500 / _frameRates[i]) {
 				_frameRateCounters[i] = 0.0f;
 			}
