@@ -35,18 +35,24 @@ public class SceneRoot : MonoBehaviour
         GameManager.Instance.RoomLoadedCallback += OnNewRoomLoaded;
     }
 
+    private void OnDisable()
+    {
+        GameManager.Instance.RoomLoadedCallback -= OnNewRoomLoaded;
+    }
+
     private void OnNewRoomLoaded(AssetReference obj)
     {
-        if (!_sceneInstanceSet)
-        {
-            UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(this.gameObject.scene);
-            return;
-        }
-            
+        Debug.Log("OnNewRoomLoaded: LoadedRoom=" + obj.editorAsset.name + "MyReference=" + _unloadReference.editorAsset.name);
 
         if (obj.RuntimeKey.Equals(_unloadReference.RuntimeKey))
         {
-            if(SceneInstance.Scene != null)
+            if (!_sceneInstanceSet)
+            {
+                UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(this.gameObject.scene);
+                return;
+            }
+
+            if (SceneInstance.Scene != null)
                 Addressables.UnloadSceneAsync(SceneInstance);
         }
     }
