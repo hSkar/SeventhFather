@@ -301,7 +301,7 @@ PrefabInstance:
     - target: {fileID: 716933264969485118, guid: 23e90e96380dcb04386d85cd2fdeb9bd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 716933264969485118, guid: 23e90e96380dcb04386d85cd2fdeb9bd,
         type: 3}
@@ -392,6 +392,11 @@ PrefabInstance:
         type: 3}
       propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270834312487366085, guid: 23e90e96380dcb04386d85cd2fdeb9bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7736909409543162429, guid: 23e90e96380dcb04386d85cd2fdeb9bd,
         type: 3}

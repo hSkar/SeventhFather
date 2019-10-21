@@ -160,6 +160,9 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+  onAudioFinished:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &311110944
 Transform:
   m_ObjectHideFlags: 0
@@ -248,17 +251,17 @@ PrefabInstance:
     - target: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.113
       objectReference: {fileID: 0}
     - target: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.647
       objectReference: {fileID: 0}
     - target: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.276
       objectReference: {fileID: 0}
     - target: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
@@ -268,7 +271,7 @@ PrefabInstance:
     - target: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
@@ -278,7 +281,7 @@ PrefabInstance:
     - target: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
@@ -293,7 +296,7 @@ PrefabInstance:
     - target: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
