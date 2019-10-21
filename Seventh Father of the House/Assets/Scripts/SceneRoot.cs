@@ -24,12 +24,12 @@ public class SceneRoot : MonoBehaviour
 
     private void OnEnable()
     {
-        if (!_translateOnEnable)
+        if (_translateOnEnable)
         {
-            if (_roomTransform == null)
-                _roomTransform = this.transform;
+            //if (_roomTransform == null)
+            //    _roomTransform = this.transform;
 
-            _roomTransform.Rotate(0, _yRotation, 0);
+            //_roomTransform.Rotate(0, _yRotation, 0);
         }
 
         GameManager.Instance.RoomLoadedCallback += OnNewRoomLoaded;

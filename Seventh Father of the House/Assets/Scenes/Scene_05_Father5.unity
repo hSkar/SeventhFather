@@ -218,9 +218,9 @@ MonoBehaviour:
   _unloadReference:
     m_AssetGUID: 1859178122c8f1145880590760ae2883
     m_SubObjectName: 
-  _yRotation: 270
+  _yRotation: 0
   _roomTransform: {fileID: 700289871}
-  _translateOnEnable: 1
+  _translateOnEnable: 0
 --- !u!4 &2032942754
 Transform:
   m_ObjectHideFlags: 0
@@ -395,6 +395,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
+      propertyPath: onAudioFinished.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
       propertyPath: OverrideMaxDistance
       value: 7.4
       objectReference: {fileID: 0}
@@ -403,5 +408,21 @@ PrefabInstance:
       propertyPath: Event
       value: event:/Far5wav
       objectReference: {fileID: 0}
+    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
+      propertyPath: onAudioFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
+      propertyPath: onAudioFinished.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
+      propertyPath: onAudioFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a39674e509f968489734101d96e706d,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc60c22ee86deac4f95d18477ae8d0a1, type: 3}

@@ -11,6 +11,7 @@ public class ScriptableTrigger : ScriptableObject
 
     public void DoTrigger()
     {
+        Debug.Log("Scriptable Trigger Invoked: " + this.name);
         Trigger?.Invoke();
     }
 
