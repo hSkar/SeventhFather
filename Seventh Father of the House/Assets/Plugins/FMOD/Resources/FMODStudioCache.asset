@@ -15,7 +15,8 @@ MonoBehaviour:
   Path: event:/Far2
   guid: ae2add887b52a146a9ce9b1d9616ba7f
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -38,7 +39,8 @@ MonoBehaviour:
   Path: event:/Far4
   guid: 6ba9ec633514f5458d40a6d3e280c6e5
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -46,6 +48,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 6
   Length: 15304
+--- !u!114 &-6473903904672932595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Master.bank
+  SubDir: 
+  lastModified: 637072133910000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 9759712
+  Exists: 1
 --- !u!114 &-5760215492075352618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,7 +83,8 @@ MonoBehaviour:
   Path: event:/Far7b
   guid: f36ba9cb453f354083e10a6aca8010cd
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -69,6 +92,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 26782
+--- !u!114 &-5670360826019560351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Master.bank
+  SubDir: 
+  lastModified: 637072133910000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 9759712
+  Exists: 1
 --- !u!114 &-4135802938532393361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,7 +127,8 @@ MonoBehaviour:
   Path: event:/sink
   guid: 233cfad933d5814f93d252a719a9b7fd
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -107,7 +151,8 @@ MonoBehaviour:
   Path: event:/Far6
   guid: a24ece05b868d540951737d73594733f
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -130,10 +175,11 @@ MonoBehaviour:
   Path: event:/skummel_vind_atmos
   guid: c2035ecf270afc4c910e217c8966252c
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
@@ -191,13 +237,14 @@ MonoBehaviour:
   Path: event:/Far1_stoyfjernet
   guid: 58bb85de3cb8f749b828f1df552be214
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 7.4
+  MaxDistance: 20
   Length: 34455
 --- !u!114 &-229528413202593950
 MonoBehaviour:
@@ -231,7 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 2805401880285640703}
-  - {fileID: 7226799773718789090}
+  - {fileID: -6473903904672932595}
   EditorEvents:
   - {fileID: 3558546326546347749}
   - {fileID: -818463233534262485}
@@ -251,10 +298,10 @@ MonoBehaviour:
   - {fileID: 9074251179978067214}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -6473903904672932595}
   StringsBanks:
   - {fileID: 2805401880285640703}
-  stringsBankWriteTime: 637072092820000000
+  stringsBankWriteTime: 637072133910000000
   cacheVersion: 3
 --- !u!114 &494104070133178440
 MonoBehaviour:
@@ -271,7 +318,8 @@ MonoBehaviour:
   Path: event:/klokke
   guid: fcd19cadff509f4e89993d954bc20305
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -333,7 +381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/Master.strings.bank
   SubDir: 
-  lastModified: 637072092820000000
+  lastModified: 637072133910000000
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -354,7 +402,8 @@ MonoBehaviour:
   Path: event:/Vindbjelle_starten
   guid: 63caff4a5d6ac54988068b6d9fb244e9
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -377,7 +426,8 @@ MonoBehaviour:
   Path: event:/peis
   guid: e623e6aeece0f44f8b65be13fb95967a
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -418,7 +468,8 @@ MonoBehaviour:
   Path: event:/lampe
   guid: 2b13aec3f2aa26429834e29abecdd41c
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -481,10 +532,11 @@ MonoBehaviour:
   Path: event:/skummel_vind_utenfor
   guid: 6b6d4ab8142cc94693ea929912aaa8ac
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -504,7 +556,8 @@ MonoBehaviour:
   Path: event:/Vindbjelle_inne
   guid: 878251a89ff01d4c8eceb6753575e107
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -571,7 +624,7 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 9759456
-  Exists: 1
+  Exists: 0
 --- !u!114 &7505115638491622719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,7 +658,8 @@ MonoBehaviour:
   Path: event:/Far3
   guid: 37ae641eee66fe40b9cce41e2581d950
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -646,7 +700,8 @@ MonoBehaviour:
   Path: event:/Far5wav
   guid: 9044ed6f9ca1d44c9d2167317ab4a871
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -689,7 +744,8 @@ MonoBehaviour:
   Path: event:/Vindbjelle_inne_klang
   guid: d5fea2a252e4cf448d63798dda8167eb
   Banks:
-  - {fileID: 7226799773718789090}
+  - {fileID: -5670360826019560351}
+  - {fileID: -6473903904672932595}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
