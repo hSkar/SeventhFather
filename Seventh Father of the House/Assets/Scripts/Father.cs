@@ -15,7 +15,7 @@ public class Father : MonoBehaviour
 
     private void Awake()
     {
-        playerTransform = Camera.main.transform;
+        playerTransform = GameManager.Instance.PlayerCamera;
 
         if (_headTransform == null)
             _headTransform = transform;

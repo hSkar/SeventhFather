@@ -22,23 +22,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Awake()
-    {
-        if (_instance == null)
-            _instance = this;
-        else if(_instance != this)
-        {
-            Destroy(this);
-        }
-
-        DontDestroyOnLoad(this.gameObject);
-    }
 #endregion
     public AssetReference LastLoadedRoom;
 
     public Action<AssetReference> RoomLoadedCallback;
 
-    private Transform PlayerCamera;
+    public Transform PlayerCamera;
+
+    private void Awake()
+    {
+        if (_instance == null)
+            _instance = this;
+        else if (_instance != this)
+        {
+            Destroy(this);
+        }
+
+        DontDestroyOnLoad(this.gameObject);
+        PlayerCamera = Camera.main.transform;
+    }
 
     public void OnLoadedRoom(AssetReference sceneRef)
     {
