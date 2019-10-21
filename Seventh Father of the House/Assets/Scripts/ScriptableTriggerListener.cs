@@ -16,11 +16,21 @@ public class ScriptableTriggerListener : MonoBehaviour
 
     private void OnEnable()
     {
+        if (trigger == null)
+        {
+            this.enabled = false;
+            return;
+        }
+            
+
         trigger.RegisterListener(OnTrigger);
     }
 
     private void OnDisable()
     {
+        if (trigger == null)
+            return;
+
         trigger.UnRegisterListener(OnTrigger);
     }
 }
