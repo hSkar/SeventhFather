@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9967806561da2da44815f2973db25437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
+  _speed: 1
   _movementVector:
     actionPath: /actions/default/in/MovementAxis
     needsReinit: 0
@@ -669,14 +669,14 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/skummel_vind_atmos
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 7.4
   onAudioFinished:
     m_PersistentCalls:
       m_Calls: []
@@ -775,7 +775,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125964}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
@@ -1133,7 +1133,7 @@ MonoBehaviour:
   noSteamVRFallbackCamera: {fileID: 0}
   noSteamVRFallbackMaxDistanceNoItem: 10
   noSteamVRFallbackMaxDistanceWithItem: 0.5
-  renderModelPrefab: {fileID: 1000011547835092, guid: d8d1e5711b2c77d48ac96e769aaff27a,
+  renderModelPrefab: {fileID: 1000011547835092, guid: c81daf562856c3d44be1c698fc5a64e0,
     type: 3}
   renderModels: []
   mainRenderModel: {fileID: 0}
@@ -1274,7 +1274,7 @@ MonoBehaviour:
   noSteamVRFallbackCamera: {fileID: 0}
   noSteamVRFallbackMaxDistanceNoItem: 10
   noSteamVRFallbackMaxDistanceWithItem: 0.5
-  renderModelPrefab: {fileID: 1000012617731570, guid: b3cb7e5f55e66cb40aea59db72c62365,
+  renderModelPrefab: {fileID: 1000012617731570, guid: 8ad0c224eeed72b4587baa926e7da798,
     type: 3}
   renderModels: []
   mainRenderModel: {fileID: 0}

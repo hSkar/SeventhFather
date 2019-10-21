@@ -12175,7 +12175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296172668960016422}
   m_LocalRotation: {x: -0, y: 0.7071069, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 1.62, y: 0, z: -4.67}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_Children:
   - {fileID: 7833665857035304789}
@@ -12197,6 +12197,7 @@ MonoBehaviour:
   frameRate: 24
   persistFrames: 0
   playOnStart: 0
+  startFrameDelay: 0
 --- !u!1 &8419661719158024178
 GameObject:
   m_ObjectHideFlags: 0
@@ -12980,10 +12981,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioTrigger_Father1
       objectReference: {fileID: 0}
+    - target: {fileID: 8656499232198470937, guid: 70a97182234446147a08fe13aa137d43,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8656499232198470941, guid: 70a97182234446147a08fe13aa137d43,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8656499232198470941, guid: 70a97182234446147a08fe13aa137d43,
         type: 3}
@@ -12993,7 +12999,7 @@ PrefabInstance:
     - target: {fileID: 8656499232198470941, guid: 70a97182234446147a08fe13aa137d43,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.89
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8656499232198470941, guid: 70a97182234446147a08fe13aa137d43,
         type: 3}
@@ -13038,17 +13044,22 @@ PrefabInstance:
     - target: {fileID: 8656499232198470939, guid: 70a97182234446147a08fe13aa137d43,
         type: 3}
       propertyPath: m_Radius
-      value: 2.17
+      value: 1.74
       objectReference: {fileID: 0}
     - target: {fileID: 8656499232198470939, guid: 70a97182234446147a08fe13aa137d43,
         type: 3}
       propertyPath: m_Center.x
-      value: -0.66
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656499232198470939, guid: 70a97182234446147a08fe13aa137d43,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8656499232198470939, guid: 70a97182234446147a08fe13aa137d43,
         type: 3}
       propertyPath: m_Center.z
-      value: -1.46
+      value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8656499232198470936, guid: 70a97182234446147a08fe13aa137d43,
         type: 3}

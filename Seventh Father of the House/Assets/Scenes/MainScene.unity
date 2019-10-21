@@ -167,7 +167,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &189350312
+--- !u!43 &373210411
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -354,11 +354,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioTrigger_SkummelAmbience
       objectReference: {fileID: 0}
-    - target: {fileID: 570874573330240612, guid: 70a97182234446147a08fe13aa137d43,
-        type: 3}
-      propertyPath: uniqueIdentifier
-      value: vind
-      objectReference: {fileID: 0}
     - target: {fileID: 8656499232198470941, guid: 70a97182234446147a08fe13aa137d43,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -438,6 +433,11 @@ PrefabInstance:
         type: 3}
       propertyPath: StopEvent
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 570874573330240612, guid: 70a97182234446147a08fe13aa137d43,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: vind
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70a97182234446147a08fe13aa137d43, type: 3}
@@ -619,34 +619,14 @@ PrefabInstance:
     - target: {fileID: 2326430, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1531339443}
+      objectReference: {fileID: 1613734108}
     - target: {fileID: 3390842, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 189350312}
-    - target: {fileID: 890522064, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2013424078, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: _speed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1486751380, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: OverrideMinDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1486751380, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: OverrideMaxDistance
-      value: 7.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1486751380, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: StopEvent
-      value: 12
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 373210411}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
---- !u!21 &1531339443
+--- !u!21 &1613734108
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -778,16 +758,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 587388505}
     m_Modifications:
-    - target: {fileID: 5001203054098583548, guid: b820589aeba0af2409520a6f94c315b8,
-        type: 3}
-      propertyPath: m_Name
-      value: SceneTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001203054098583548, guid: b820589aeba0af2409520a6f94c315b8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 81477078556238922, guid: b820589aeba0af2409520a6f94c315b8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -857,6 +827,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.77568346
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001203054098583548, guid: b820589aeba0af2409520a6f94c315b8,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001203054098583548, guid: b820589aeba0af2409520a6f94c315b8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3375612934272793856, guid: b820589aeba0af2409520a6f94c315b8,
         type: 3}
@@ -955,7 +935,7 @@ PrefabInstance:
     - target: {fileID: 5170860370269319593, guid: d674afdbe3d6cbf40901df4b775594be,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3024712489088351332, guid: d674afdbe3d6cbf40901df4b775594be,
         type: 3}
