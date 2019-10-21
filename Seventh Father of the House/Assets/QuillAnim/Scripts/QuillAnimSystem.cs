@@ -89,8 +89,11 @@ public class QuillAnimation {
                 var frameNumber = int.Parse(frameName);
                 _layersFrameNumbers[layer.gameObject][f] = frameNumber;
                     if (frameNumber > _overallFrameCount) _overallFrameCount = frameNumber;
-                  
-                _layersFrames[i][f].SetActive(false);
+
+                if(f > 0)
+                {
+                    _layersFrames[i][f].SetActive(false);
+                }
             }
         }
 

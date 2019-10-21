@@ -7,6 +7,7 @@ namespace QuillAnim {
 public class QuillAnimComponent : MonoBehaviour {
     public int frameRate = 12;
     public bool persistFrames = false;
+        private bool _isPlaying = false;
     private QuillAnimation _animation;
 
     void Start() {
@@ -14,7 +15,15 @@ public class QuillAnimComponent : MonoBehaviour {
         _animation.SetFrame(0);
     }
 
+   public void Play()
+    {
+        _isPlaying = true;
+    }
+
     void Update() {
+        if (!_isPlaying)
+            return;
+
         _animation.Update();
     }
     
