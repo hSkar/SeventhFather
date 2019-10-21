@@ -28,7 +28,7 @@ public class QuillAnimSystem : SingletonObject<QuillAnimSystem> {
 	void Update () {
 		for(int i = 0; i < _frameRates.Count; ++i) {
 			_frameRateCounters[i] += Time.deltaTime * 590;
-			if(_frameRateCounters[i] >= 1000 / _frameRates[i]) {
+			if(_frameRateCounters[i] >= 500 / _frameRates[i]) {
 				_frameRateCounters[i] = 0.0f;
 			}
 		}
@@ -50,6 +50,8 @@ public class QuillAnimation {
     private Dictionary<GameObject, int> _activeLayerFrame;
 	private bool _persist_frames;
 	private int _frameRate;
+
+    public int _startFrameDelay;
 
 	public QuillAnimation(Transform animation_root, int frameRate, bool keep_layers_on) {
             _overallFrameCount = 0;
@@ -89,8 +91,11 @@ public class QuillAnimation {
                 var frameNumber = int.Parse(frameName);
                 _layersFrameNumbers[layer.gameObject][f] = frameNumber;
                     if (frameNumber > _overallFrameCount) _overallFrameCount = frameNumber;
-                  
-                _layersFrames[i][f].SetActive(false);
+
+                if(f > 0)
+                {
+                    _layersFrames[i][f].SetActive(false);
+                }
             }
         }
 
@@ -134,7 +139,8 @@ public class QuillAnimation {
 			SetFrame(next_frame);
 		}
 	}
-
+    
+        private float _lastTimestamp = 0.0f;
 	public void SetFrame(int next_frame) {
             int index = 0;
             //Debug.Log("Current Frame = " + _currentFrame);
@@ -159,22 +165,24 @@ public class QuillAnimation {
             index++;
         }
 
-		//foreach(var layer in _layersFrames) {
-  //              //Match next frame with current index
-            
-		//	if(_currentFrame < layer.Length)
-		//		layer[_currentFrame].SetActive(false);
+            //foreach(var layer in _layersFrames) {
+            //              //Match next frame with current index
 
-		//	if(next_frame < layer.Length) {
-		//		layer[next_frame].SetActive(true);
-		//	}
-		//	else {
-		//		if(_persist_frames) {
-		//			layer[layer.Length - 1].SetActive(true);
-		//		}
-		//	}
-		//}
+            //	if(_currentFrame < layer.Length)
+            //		layer[_currentFrame].SetActive(false);
 
+            //	if(next_frame < layer.Length) {
+            //		layer[next_frame].SetActive(true);
+            //	}
+            //	else {
+            //		if(_persist_frames) {
+            //			layer[layer.Length - 1].SetActive(true);
+            //		}
+            //	}
+            //}
+
+            Debug.Log("Diff = " + (Time.time - _lastTimestamp));
+            _lastTimestamp = Time.time;
 		_currentFrame = next_frame;
 	}
 }
