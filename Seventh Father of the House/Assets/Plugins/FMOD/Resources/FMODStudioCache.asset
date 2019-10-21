@@ -20,6 +20,49 @@ MonoBehaviour:
   - Name: 
     Value: 10004640
   Exists: 0
+--- !u!114 &-7975023513612835179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Master.bank
+  SubDir: 
+  lastModified: 637072731760000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 12352448
+  Exists: 0
+--- !u!114 &-7477530102571715567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vindbjelle_inne_radio
+  m_EditorClassIdentifier: 
+  Path: event:/Vindbjelle_inne_radio
+  guid: c4bd5aa57a27794ab15a9b33da1d3f8e
+  Banks:
+  - {fileID: 2045635797686794896}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 72000
 --- !u!114 &-6528082609069583774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,14 +78,15 @@ MonoBehaviour:
   Path: event:/Far4
   guid: 6ba9ec633514f5458d40a6d3e280c6e5
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 6
-  Length: 15304
+  Length: 16400
 --- !u!114 &-6145278393174791740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,14 +102,15 @@ MonoBehaviour:
   Path: event:/Far6
   guid: a24ece05b868d540951737d73594733f
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 5.6
-  Length: 22400
+  Length: 22100
 --- !u!114 &-6089106025507350762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +126,8 @@ MonoBehaviour:
   Path: event:/Vindbjelle_starten
   guid: 63caff4a5d6ac54988068b6d9fb244e9
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -104,14 +150,15 @@ MonoBehaviour:
   Path: event:/Far2
   guid: ae2add887b52a146a9ce9b1d9616ba7f
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 26573
+  Length: 26600
 --- !u!114 &-5317841334027168779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,7 +174,8 @@ MonoBehaviour:
   Path: event:/lampe
   guid: 2b13aec3f2aa26429834e29abecdd41c
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -150,7 +198,8 @@ MonoBehaviour:
   Path: event:/bird_stoyfri
   guid: 179308a79280b54b85a144d8383290a2
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -172,11 +221,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/Master.strings.bank
   SubDir: 
-  lastModified: 637072704110000000
+  lastModified: 637072798640000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1458
+    Value: 1542
   Exists: 1
 --- !u!114 &-3314345824997318104
 MonoBehaviour:
@@ -193,14 +242,15 @@ MonoBehaviour:
   Path: event:/Far1_stoyfjernet
   guid: 58bb85de3cb8f749b828f1df552be214
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 34455
+  Length: 32600
 --- !u!114 &-1451646929054780332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +266,8 @@ MonoBehaviour:
   Path: event:/sink
   guid: 233cfad933d5814f93d252a719a9b7fd
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -239,7 +290,8 @@ MonoBehaviour:
   Path: event:/peis
   guid: e623e6aeece0f44f8b65be13fb95967a
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -261,7 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -5080102909407226851}
-  - {fileID: 199894332222170607}
+  - {fileID: 4326461154393726528}
   EditorEvents:
   - {fileID: -5254174326228017242}
   - {fileID: -1451646929054780332}
@@ -281,12 +333,14 @@ MonoBehaviour:
   - {fileID: 2364627001090854677}
   - {fileID: 8577125798614767047}
   - {fileID: 5197469352547294148}
+  - {fileID: 927741679832381920}
+  - {fileID: 5474788758610071027}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 199894332222170607}
+  - {fileID: 4326461154393726528}
   StringsBanks:
   - {fileID: -5080102909407226851}
-  stringsBankWriteTime: 637072704110000000
+  stringsBankWriteTime: 637072798640000000
   cacheVersion: 3
 --- !u!114 &199894332222170607
 MonoBehaviour:
@@ -307,7 +361,30 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 10259296
-  Exists: 1
+  Exists: 0
+--- !u!114 &927741679832381920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vindbjelle_inne_vinyl
+  m_EditorClassIdentifier: 
+  Path: event:/Vindbjelle_inne_vinyl
+  guid: b426b206f513d04199e2e34e65a6e45f
+  Banks:
+  - {fileID: 4326461154393726528}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 72000
 --- !u!114 &1065466351573710101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,7 +400,8 @@ MonoBehaviour:
   Path: event:/Vindbjelle_inne_klang
   guid: d5fea2a252e4cf448d63798dda8167eb
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -346,7 +424,8 @@ MonoBehaviour:
   Path: event:/Vindbjelle_inne
   guid: 878251a89ff01d4c8eceb6753575e107
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -354,6 +433,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 72000
+--- !u!114 &2045635797686794896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Master.bank
+  SubDir: 
+  lastModified: 637072798640000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 12352448
+  Exists: 1
 --- !u!114 &2364627001090854677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,14 +468,15 @@ MonoBehaviour:
   Path: event:/Far7b
   guid: f36ba9cb453f354083e10a6aca8010cd
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 26782
+  Length: 26600
 --- !u!114 &2865925542082100183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,14 +492,38 @@ MonoBehaviour:
   Path: event:/Far3
   guid: 37ae641eee66fe40b9cce41e2581d950
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 5.8
-  Length: 14886
+  Length: 14200
+--- !u!114 &3493867587447586169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vindbjelle_inne_vinyl
+  m_EditorClassIdentifier: 
+  Path: event:/Vindbjelle_inne_vinyl
+  guid: b426b206f513d04199e2e34e65a6e45f
+  Banks:
+  - {fileID: 2045635797686794896}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 72000
 --- !u!114 &4222566222004485724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,7 +539,8 @@ MonoBehaviour:
   Path: event:/skummel_vind_utenfor
   guid: 6b6d4ab8142cc94693ea929912aaa8ac
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -423,6 +548,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 66000
+--- !u!114 &4326461154393726528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Master.bank
+  SubDir: 
+  lastModified: 637072798640000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 12352448
+  Exists: 1
 --- !u!114 &5197469352547294148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,7 +583,8 @@ MonoBehaviour:
   Path: "event:/pappeg\xF8ye_far2"
   guid: 5fb9f4fcee3d4a49a8197b97b295ae9e
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -446,6 +592,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 30627
+--- !u!114 &5474788758610071027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vindbjelle_inne_radio
+  m_EditorClassIdentifier: 
+  Path: event:/Vindbjelle_inne_radio
+  guid: c4bd5aa57a27794ab15a9b33da1d3f8e
+  Banks:
+  - {fileID: 4326461154393726528}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 72000
 --- !u!114 &6943093536826673634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,7 +630,8 @@ MonoBehaviour:
   Path: event:/skummel_vind_atmos
   guid: c2035ecf270afc4c910e217c8966252c
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -469,6 +639,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 65984
+--- !u!114 &7428029850381044550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Master.bank
+  SubDir: 
+  lastModified: 637072728350000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 12352448
+  Exists: 0
 --- !u!114 &7818064011057998321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,14 +694,15 @@ MonoBehaviour:
   Path: event:/Far5wav
   guid: 9044ed6f9ca1d44c9d2167317ab4a871
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 21982
+  Length: 21300
 --- !u!114 &8577125798614767047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,7 +718,8 @@ MonoBehaviour:
   Path: event:/klokke
   guid: fcd19cadff509f4e89993d954bc20305
   Banks:
-  - {fileID: 199894332222170607}
+  - {fileID: 2045635797686794896}
+  - {fileID: 4326461154393726528}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
