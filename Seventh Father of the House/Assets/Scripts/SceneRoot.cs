@@ -42,7 +42,8 @@ public class SceneRoot : MonoBehaviour
 
     private void OnNewRoomLoaded(AssetReference obj)
     {
-        Debug.Log("OnNewRoomLoaded: LoadedRoom=" + obj.editorAsset.name + "MyReference=" + _unloadReference.editorAsset.name);
+        if(_unloadReference.editorAsset != null)
+            Debug.Log("OnNewRoomLoaded: LoadedRoom=" + obj.editorAsset.name + "MyReference=" + _unloadReference.editorAsset.name);
 
         if (obj.RuntimeKey.Equals(_unloadReference.RuntimeKey))
         {
