@@ -353,6 +353,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3135363801617544033, guid: 23e90e96380dcb04386d85cd2fdeb9bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0726f34e620c04b43813c93c8053f406, type: 2}
     - target: {fileID: 6487461280950366778, guid: 23e90e96380dcb04386d85cd2fdeb9bd,
         type: 3}
       propertyPath: _lookAtPlayer

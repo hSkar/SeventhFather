@@ -120,63 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &311110942
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 311110944}
-  - component: {fileID: 311110943}
-  m_Layer: 0
-  m_Name: Lampe
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &311110943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311110942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/lampe
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
-  onAudioFinished:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!4 &311110944
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311110942}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8335, y: 0.645, z: -0.126}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_Children: []
-  m_Father: {fileID: 700289871}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &700289871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
@@ -303,56 +246,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2556958726892339878, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.042
-      objectReference: {fileID: 0}
-    - target: {fileID: 2556958726892339878, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.568
-      objectReference: {fileID: 0}
-    - target: {fileID: 2556958726892339878, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 238.497
-      objectReference: {fileID: 0}
-    - target: {fileID: 2556958726892339878, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.47346753
-      objectReference: {fileID: 0}
-    - target: {fileID: 2556958726892339878, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.5739722
-      objectReference: {fileID: 0}
-    - target: {fileID: 2556958726892339878, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.43253493
-      objectReference: {fileID: 0}
-    - target: {fileID: 2556958726892339878, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.50921315
-      objectReference: {fileID: 0}
-    - target: {fileID: 2556958726892339878, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 78.158005
-      objectReference: {fileID: 0}
-    - target: {fileID: 2556958726892339878, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -30.130001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2556958726892339878, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.42
-      objectReference: {fileID: 0}
     - target: {fileID: 1177206263504638687, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
       propertyPath: m_Mesh
@@ -368,61 +261,44 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6699309264770575396, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787066770659009653, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.733
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787066770659009653, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.643
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787066770659009653, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.531
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787066770659009649, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: m_Name
-      value: Father4_audio
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: onAudioFinished.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: OverrideMaxDistance
-      value: 7.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: Event
-      value: event:/Far5wav
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: onAudioFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
-        type: 3}
-      propertyPath: onAudioFinished.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
         type: 3}
       propertyPath: onAudioFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: 0a39674e509f968489734101d96e706d,
-        type: 2}
+      objectReference: {fileID: 5524875615858518832}
+    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
+      propertyPath: onAudioFinished.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 3787066770659009648, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
+      propertyPath: onAudioFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6696657822269024188, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0726f34e620c04b43813c93c8053f406, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc60c22ee86deac4f95d18477ae8d0a1, type: 3}
+--- !u!1 &5524875615858518831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3787066770659009649, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5524875615858518830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5524875615858518832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5524875615858518831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3bba1677f9f05c42a4cfb72a1834307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 11400000, guid: 0a39674e509f968489734101d96e706d, type: 2}
