@@ -13817,14 +13817,14 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/bird_stoyfri
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 7.4
   onAudioFinished:
     m_PersistentCalls:
       m_Calls: []
@@ -27270,6 +27270,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863066182, guid: bb22ac8f4b48f0e449b3766f62889527, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 7.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb22ac8f4b48f0e449b3766f62889527, type: 3}

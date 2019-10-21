@@ -152,14 +152,14 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/klokke
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 7.4
   onAudioFinished:
     m_PersistentCalls:
       m_Calls: []
@@ -341,6 +341,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5160929088310615217, guid: 1c0e13f1b27622a48924ef74e7c0f8ac,
+        type: 3}
+      propertyPath: StopEvent
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c0e13f1b27622a48924ef74e7c0f8ac, type: 3}

@@ -607,6 +607,11 @@ PrefabInstance:
       propertyPath: onAudioFinished.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1866205520025497579, guid: dd7307d8c976ff54b97c7fba7f29de49,
+        type: 3}
+      propertyPath: StopEvent
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1866205520025497582, guid: dd7307d8c976ff54b97c7fba7f29de49,
         type: 3}
       propertyPath: m_LocalPosition.x
