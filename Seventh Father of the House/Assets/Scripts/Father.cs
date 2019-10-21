@@ -8,6 +8,10 @@ public class Father : MonoBehaviour
     private Transform playerTransform;
     [SerializeField]
     private Transform _headTransform;
+    [SerializeField]
+    private bool _lookAtPlayer;
+    [SerializeField]
+    private bool _usePivot;
 
     private void Awake()
     {
@@ -24,13 +28,20 @@ public class Father : MonoBehaviour
 
     private void LookAtPlayer()
     {
+        if (!_lookAtPlayer)
+            return;
+
         if (playerTransform)
         {
-            Vector3 offset = _headTransform.position - playerTransform.position;
+            if (_usePivot)
+            {
+                _headTransform.rotation = Quaternion.LookRotation(_headTransform.position - playerTransform.position);
+                return;
+            }
 
+            Vector3 offset = _headTransform.position - playerTransform.position;
             offset.y = 0;
             offset = offset.normalized;
-
 
             if (_headTransform)
             {
