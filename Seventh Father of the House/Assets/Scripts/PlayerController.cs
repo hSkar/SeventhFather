@@ -23,13 +23,9 @@ public class PlayerController : MonoBehaviour
 
         lookDirection.y = 0;
         lookDirection = lookDirection.normalized;
-        
+
         _movement = _movementVector[_source].axis;
 
-        var localMovementDir = hmd.InverseTransformDirection(_movement).normalized;
-        bool movingBackwards = false;
-            //Vector3.Dot(localMovementDir, lookDirection) < 0;
-
-        transform.position += (movingBackwards ? -1 : 1) * lookDirection * _movement.magnitude * _speed * Time.deltaTime;
+        transform.position += lookDirection * _movement.magnitude * _speed * Time.deltaTime;
     }
 }
