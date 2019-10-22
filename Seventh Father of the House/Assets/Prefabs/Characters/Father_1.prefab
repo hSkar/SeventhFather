@@ -245,7 +245,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _headTransform: {fileID: 6598349405342294402}
   _lookAtPlayer: 1
-  _usePivot: 0
+  _rotateHeight: 1
+  _weight: 1
 --- !u!1 &178558823982918244
 GameObject:
   m_ObjectHideFlags: 0
@@ -12233,6 +12234,7 @@ MonoBehaviour:
   persistFrames: 0
   playOnStart: 0
   startFrameDelay: 0
+  loop: 0
 --- !u!1 &8419661719158024178
 GameObject:
   m_ObjectHideFlags: 0
