@@ -5,16 +5,18 @@ using UnityEngine.Events;
 
 namespace QuillAnim {
 public class QuillAnimComponent : MonoBehaviour {
+        public Transform[] layers;
     public int frameRate = 12;
     public bool persistFrames = false;
         private bool _isPlaying = false;
         public bool playOnStart;
         public int startFrameDelay;
+        public bool loop;
 
     private QuillAnimation _animation;
 
     void Start() {
-        _animation = new QuillAnimation(this.transform, frameRate, persistFrames);
+        _animation = new QuillAnimation(this.transform, frameRate, persistFrames, loop, layers);
             _animation._startFrameDelay = startFrameDelay;
         _animation.SetFrame(0);
 

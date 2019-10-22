@@ -120,6 +120,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &246472997 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6965405073863305341, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5524875615858518830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &353744878 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4572092690523768301, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5524875615858518830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &700289871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5524875615176194145, guid: dc60c22ee86deac4f95d18477ae8d0a1,
@@ -246,5 +258,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5524875615574795341, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
+      propertyPath: layers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5524875615574795341, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
+      propertyPath: layers.Array.data[0]
+      value: 
+      objectReference: {fileID: 246472997}
+    - target: {fileID: 5524875615574795341, guid: dc60c22ee86deac4f95d18477ae8d0a1,
+        type: 3}
+      propertyPath: layers.Array.data[1]
+      value: 
+      objectReference: {fileID: 353744878}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc60c22ee86deac4f95d18477ae8d0a1, type: 3}

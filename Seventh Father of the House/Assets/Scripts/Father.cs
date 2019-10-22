@@ -11,10 +11,14 @@ public class Father : MonoBehaviour
     [SerializeField]
     private bool _lookAtPlayer;
     [SerializeField]
-    private bool _usePivot;
-
+    private bool _rotateHeight;
+    [Range(0, 1)]
+    [SerializeField]
+    private float _weight;
+    private Quaternion _defaultRotation;
     private void Awake()
     {
+        _defaultRotation = _headTransform.rotation;
         playerTransform = GameManager.Instance.PlayerCamera;
 
         if (_headTransform == null)
@@ -33,9 +37,9 @@ public class Father : MonoBehaviour
 
         if (playerTransform)
         {
-            if (_usePivot)
+            if (_rotateHeight)
             {
-                _headTransform.rotation = Quaternion.LookRotation(_headTransform.position - playerTransform.position);
+                _headTransform.rotation = Quaternion.Slerp(_defaultRotation, Quaternion.LookRotation(_headTransform.position - playerTransform.position), _weight);
                 return;
             }
 

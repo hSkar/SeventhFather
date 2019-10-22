@@ -50,13 +50,14 @@ public class QuillAnimation {
     private Dictionary<GameObject, int> _activeLayerFrame;
 	private bool _persist_frames;
 	private int _frameRate;
-
+        private bool _loop;
     public int _startFrameDelay;
-
-	public QuillAnimation(Transform animation_root, int frameRate, bool keep_layers_on) {
-            _overallFrameCount = 0;
-
-            _persist_frames = keep_layers_on;
+        
+	public QuillAnimation(Transform animation_root, int frameRate, bool keep_layers_on, bool loop, Transform[] layers = null) {
+        bool hasCustomLayers = (layers != null && layers.Length > 0);
+        _loop = loop;
+        _overallFrameCount = 0;
+        _persist_frames = keep_layers_on;
 		_frameRate = frameRate;
 		QuillAnimSystem.instance.RequestFPSCounter(_frameRate);
 
@@ -69,14 +70,18 @@ public class QuillAnimation {
 		}
 
 		int layer_count = root.childCount;
+            if(layers != null)
+            {
+                layer_count = layers.Length;
+            }
 
-		_layersFrames = new GameObject[layer_count][];  // create arrays for each layer
+		    _layersFrames = new GameObject[layer_count][];  // create arrays for each layer
                                                         //_layersFrameNumbers = new int[layer_count][];
             _layersFrameNumbers = new Dictionary<GameObject, int[]>();
             _activeLayerFrame = new Dictionary<GameObject, int>();
 
             for (int i = 0; i < layer_count; ++i) {          // for each layer, add the frames
-            var layer = root.GetChild(i);
+            var layer = hasCustomLayers ? layers[i] : root.GetChild(i);
             
             var frame_count = layer.childCount;                 // get the number of frames
             _layersFrames[i] = new GameObject[frame_count];     // create an array for the frames
@@ -147,10 +152,14 @@ public class QuillAnimation {
         foreach(var layer in _layersFrameNumbers)
         {
             int currentIndex = _activeLayerFrame[layer.Key];
-            //Debug.Log("CurrentIndex = " + currentIndex + ", layer = " + index);
-            //GameObject currentLayerFrame = _layersFrames[index][currentIndex];
+            if(next_frame == 0 && _loop)
+            {
+                _layersFrames[index][currentIndex].SetActive(false);
+                _layersFrames[index][0].SetActive(true);
+                _activeLayerFrame[layer.Key] = 0;
+            }
 
-            if (currentIndex + 1 < _layersFrames[index].Length)
+            else if (currentIndex + 1 < _layersFrames[index].Length)
             {
                 var nextFrame = _layersFrameNumbers[layer.Key][currentIndex + 1];
 
@@ -181,8 +190,8 @@ public class QuillAnimation {
             //	}
             //}
 
-            Debug.Log("Diff = " + (Time.time - _lastTimestamp));
-            _lastTimestamp = Time.time;
+            //Debug.Log("Diff = " + (Time.time - _lastTimestamp));
+        _lastTimestamp = Time.time;
 		_currentFrame = next_frame;
 	}
 }

@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
         else if (_instance != this)
         {
             Destroy(this);
+            return;
         }
 
         DontDestroyOnLoad(this.gameObject);

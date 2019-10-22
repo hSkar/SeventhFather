@@ -24,7 +24,7 @@ public class QuillAnimNode : StateMachineBehaviour {
 		var anim_object_xform = anim_object.transform;
 		anim_object_xform.parent = this_object.transform;
 
-		_animInstance = new QuillAnimation(anim_object_xform, frameRate, persistFrames);
+		_animInstance = new QuillAnimation(anim_object_xform, frameRate, persistFrames, false);
 		_animObject = anim_object;
 	}
 

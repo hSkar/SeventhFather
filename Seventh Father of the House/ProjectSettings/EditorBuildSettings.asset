@@ -4,7 +4,34 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 2e876bc695de7b141931117bc251ba7e
+  - enabled: 1
+    path: Assets/Scenes/Scene_01_Forest.unity
+    guid: 50981e465ee621d40bb893ac9b1144f6
+  - enabled: 1
+    path: Assets/Scenes/Scene_02_Father2.unity
+    guid: 25ba8a1185e187846ad2beb73f5ff7e1
+  - enabled: 1
+    path: Assets/Scenes/Scene_03_Father3.unity
+    guid: ee445e2d9038cba45868ae6e5d724bba
+  - enabled: 1
+    path: Assets/Scenes/Scene_04_Father4.unity
+    guid: 59d6e1aceb1314f4d811946514550e44
+  - enabled: 1
+    path: Assets/Scenes/Scene_05_Father5.unity
+    guid: 9ca469bfa0342f443ae89becf6d39f84
+  - enabled: 1
+    path: Assets/Scenes/Scene_06_Father6.unity
+    guid: 1859178122c8f1145880590760ae2883
+  - enabled: 1
+    path: Assets/Scenes/Scene_07_Father7.unity
+    guid: 873450b28c11bd946a4994acbd5d56a4
+  - enabled: 1
+    path: Assets/Scenes/Scene_Hallway.unity
+    guid: fcce838821985fd48837b0bfec365452
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 2724c9d6d71b3094c9cb8ab6613beac2,
       type: 2}
